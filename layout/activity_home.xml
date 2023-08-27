@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unibisushop"
+    tools:context=".home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="688dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="11dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C6FFFFFF"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp"
+                    android:text="B I S U A N   ㋡"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/account_circle"
+                    app:fontFamily="casual" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/viewimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="311dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/unibisushop"
+                    app:shapeAppearanceOverlay="@style/round" />
+
+                <TextView
+                    android:id="@+id/prdctname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#CDFFFFFF"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/prdctprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#CDFFFFFF"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/bscs1"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bscs"
+                            app:shapeAppearanceOverlay="@style/round" />
+
+                        <ImageButton
+                            android:id="@+id/bsit1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/frntbsite"
+                            app:shapeAppearanceOverlay="@style/round" />
+
+                        <ImageButton
+                            android:id="@+id/bsf1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fntbsf" />
+
+                        <ImageButton
+                            android:id="@+id/bsede1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bed" />
+
+                        <ImageButton
+                            android:id="@+id/bsedm1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bed" />
+
+                        <ImageButton
+                            android:id="@+id/fpst1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/frntbsitft" />
+
+                        <ImageButton
+                            android:id="@+id/midwifery1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/midwifery" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/shopuni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="S H O P"
+                    android:textSize="20sp"
+                    app:backgroundTint="#94002050" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

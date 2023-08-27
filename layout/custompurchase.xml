@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/idtext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/logingbgb"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/firsttext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:text="Firstname" />
+
+        <TextView
+            android:id="@+id/lasttext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:text="Lastname" />
+
+        <TextView
+            android:id="@+id/ngalansabaligya"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:text="Product Name" />
+
+        <TextView
+            android:id="@+id/presyo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/pilakabook"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Quantity" />
+
+        <TextView
+            android:id="@+id/sukod"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Size" />
+
+        <TextView
+            android:id="@+id/petsa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/bgb"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Date" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cidtext"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/logingbgb"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:hint="ID" />
+
+        <TextView
+            android:id="@+id/ftext"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Firstname" />
+
+        <TextView
+            android:id="@+id/ltext"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Lastname" />
+
+        <TextView
+            android:id="@+id/ctext"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Course" />
+
+        <TextView
+            android:id="@+id/etext"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="E-mail" />
+
+        <TextView
+            android:id="@+id/ptext"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:background="@drawable/bgb"
+            android:gravity="center"
+            android:hint="Password" />
+    </LinearLayout>
+
+</RelativeLayout>

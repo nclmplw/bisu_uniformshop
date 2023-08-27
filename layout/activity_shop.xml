@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unibisushop"
+    tools:context=".shop">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="627dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:gravity="center"
+                android:text="ID" />
+
+            <TextView
+                android:id="@+id/prtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:gravity="center"
+                android:text="Product" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:gravity="center"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:gravity="center"
+                android:text="Size" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/loginbg"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/sizeerror2"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="#D5FFFFFF"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="202dp"
+            android:background="@drawable/loginbg">
+
+            <ImageButton
+                android:id="@+id/nega"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_toStartOf="@+id/quan"
+                app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+            <TextView
+                android:id="@+id/quan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_toStartOf="@+id/pos"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                />
+
+            <ImageButton
+                android:id="@+id/pos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                app:srcCompat="@drawable/add" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="212dp"
+                android:layout_height="87dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toStartOf="@+id/nega"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:hint="Name" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="139dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:hint="Price" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="174dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/quan"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:hint="Size" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/price"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="DATE"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/loginbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".73"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/total"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="11dp"
+                android:gravity="center"
+                android:text="Total Price"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/save"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/trans"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_baseline_save_alt_24" />
+
+                <ImageButton
+                    android:id="@+id/clear"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/trans"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_baseline_cancel_24" />
+
+                <ImageButton
+                    android:id="@+id/update"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/trans"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_baseline_update_24" />
+
+                <ImageButton
+                    android:id="@+id/insert"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/trans"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/add" />
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/trans"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="2dp"
+                android:text="BUY"
+                android:textColor="#000000"
+                app:backgroundTint="#DBE2EA" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

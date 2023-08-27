@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A47797CC"
+    tools:context=".aboutus">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="B I S U - CALAPE
+C
+A
+M
+P
+U
+S"
+        android:textColor="@color/white"
+        android:textSize="18.4sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="B I S U - CALAPE
+C
+A
+M
+P
+U
+S"
+        android:textColor="#e5de00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="667dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".73"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="174dp"
+            android:layout_height="171dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.544"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.446"
+            app:srcCompat="@drawable/unibisushop" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/vision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:text="VISION"
+                app:backgroundTint="#00000F" />
+
+            <Button
+                android:id="@+id/mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:text="MISSION"
+                app:backgroundTint="#00000F" />
+
+            <Button
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans"
+                android:text="GOALS"
+                app:backgroundTint="#00000F" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+            android:layout_below="@+id/layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/trans">
+
+            <LinearLayout
+                android:id="@+id/linearsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VISION"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:gravity="center"
+                    android:text="A premier Science and Technology university for the formation of world-class and virtuous human resources for sustainable development in Bohol and the Country."
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/svm"
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+            android:layout_below="@+id/layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/trans"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="MISSION"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:gravity="center"
+                    android:text="BISU is committed to provide quality higher education in the arts and sciences, as well as in the professional and technological fields; undertake research and development and extension services for the sustainable development of Bohol and the country."
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/svg"
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+            android:layout_below="@+id/layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/trans"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="GOALS"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To deliver its mandate, BISU is directing all its efforts towards excellence guided by its foresight. To address the needs of the strategic sectors, BISU shall:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pursue faculty and education excellence and strengthen the current viable curricular programs and develop curricular programs that are responsive to the demands of the times both in the industry and the environment;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Promote quality research outputs that respond to the needs of the local and national communities;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Develop Communities through Responsive Extension Programs;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Adopt Efficient and Profitable Income Generating Projects/Enterprise for Self-Sustainability;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Provide adequate, state-of-the-art and accessible infrastructure support facilities for quality education;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="6. Promote efficient and effective good governance supportive of high quality education."
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/core"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/trans"
+            android:text="CORE VALUES"
+            app:backgroundTint="@color/black" />
+
+        <ScrollView
+            android:id="@+id/svtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+            android:layout_below="@+id/core"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/trans">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CORE VALUES"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="253dp"
+                    android:gravity="fill"
+                    android:text="              Core values are inviolable commitments that express “who we are as an institution” and what principles or qualities should infuse all practices and activities within the university in carrying out its mission. In the pursuit of its mandate, BISU is supported by five fundamental pillars as follows:
+Search for Excellence. BISU’s commitment to quality education shall be driven and characterized by excellence in every output and activity it produces/conducts through interweaving the technical, fundamental and practical knowledge;
+Responsiveness to Challenges. As a newfound institution of higher learning, BISU is faced with all the challenges demanded particularly the continuing depletion of the national governments’ financial support along with BISU’s desire for upgrading its facilities and human resources. Being intellectually diverse and entrepreneurial, creative and innovative, BISU shall beat the odds by capitalizing on creative collaborations with its individual campuses, the community, local government units and other sectors available.
+Student Access. Being a state-owned university, BISU is committed to providing public service, by becoming a university that is open and accessible to all students who merit entrance. This value is the most important consideration by BISU in its drive to continuously develop, improve and upgrade its facilities and seek for more funds;
+Public Engagement. Expresses BISU’s commitment to search for knowledge-based solutions to societal and economic problems particularly of Bohol and of the region. Public engagement is the interpretation of BISU’s commitment to research and extension by being proactive in introducing changes that will deeply impact on the improvement of the life of the people.
+Good Governance. Alongside the current regime’s objectives of good governance in the delivery of basic services, BISU shall strive to institutionalize a streamlined, efficient and effective structure and systems that is supportive of the university’s goals and objectives, sans bureaucratic practices.
+These five pillars of BISU imply a set of core values that stand in the center of the university as an institution of higher learning. These core values are best simplified in BISU SOARS, to wit:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B – Blissful, caring and collaborative academic institution of higher learning;
+"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I – Innovative, creative and committed in the performance of its mandate;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S – Sincere in the conduct of intellectual inquiry for excellence in teaching, research, extension and production;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="U – Unsparing in sharing knowledge to enlighten the stakeholders and the community to benefit the province and country."
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S – Sensitive in promoting moral values awareness and formation;
+"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O – Objective in decision-making, in implementing its strategic plan, and in underscoring professionalism and career development of the teaching and support staff;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A – Accessible and affordable to all who meet high academic standards;"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R – Retentive in rewarding and recognizing merit, creativity and innovation; and"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:text="S – Steadfast in the inculcation of nationalism among its officials, faculty and staff and student population."
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
